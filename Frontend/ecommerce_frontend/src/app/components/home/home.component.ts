@@ -21,6 +21,16 @@ categories:any
     this.service.productDetailService(id).then(res=>res.json()).then(data=>console.log(data))
     this.router.navigate(['product/',id])
   }
+  wishlistHomeFunction(id:any){
+    let token=localStorage.getItem('token')
+    if(token){
+      this.service.addToWishlistService(id).then(res=>res.json()).then(data=>console.log(data))
+      this.router.navigateByUrl('wishlist')
+    }
+    else{
+      this.router.navigateByUrl('signin')
+    }
+  }
   addtocartHomeFunction(id:any){
     let token=localStorage.getItem('token')
     if(token){

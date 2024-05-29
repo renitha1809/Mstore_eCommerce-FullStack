@@ -17,6 +17,7 @@ import { AddProductComponent } from './admin_components/add-product/add-product.
 import { AdminproductsComponent } from './admin_components/adminproducts/adminproducts.component';
 import { ProductEditComponent } from './admin_components/product-edit/product-edit.component';
 import { NewcategoryComponent } from './admin_components/newcategory/newcategory.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { NewcategoryComponent } from './admin_components/newcategory/newcategory
     AdminproductsComponent,
     ProductEditComponent,
     NewcategoryComponent,
-    
+    WishlistComponent,
+
   ],
   imports: [
     BrowserModule,

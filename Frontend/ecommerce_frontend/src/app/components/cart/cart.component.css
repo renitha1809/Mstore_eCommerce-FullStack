@@ -30,7 +30,7 @@
     padding-left: 20px;
   align-items: center;
   background-clip: padding-box;
-  background-color: #fa6400;
+  background-color: #ae5b24;
   border: 1px solid transparent;
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -58,7 +58,7 @@
 
 .button-5:hover,
 .button-5:focus {
-  background-color: #fb8332;
+  background-color: #ae5b24;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .button-5:active {
-  background-color: #c85000;
+  background-color:#ae5b24;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }

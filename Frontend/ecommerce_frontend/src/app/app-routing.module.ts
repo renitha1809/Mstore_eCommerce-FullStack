@@ -13,6 +13,7 @@ import { OrderComponent } from './components/order/order.component';
 import { PlaceOrderComponent } from './components/place-order/place-order.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { RegisterComponent } from './components/register/register.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 const routes: Routes = [
   {path:"signup",component:RegisterComponent},
@@ -27,8 +28,8 @@ const routes: Routes = [
   {path:'admin/dashboard/product',component:AddProductComponent},
   {path:'admin/dashboard/category/:id',component:AdminproductsComponent},
   {path:'admin/dashboard/product/:id',component:ProductEditComponent},
-  {path:'admin/dashboard/category_new',component:NewcategoryComponent}
-  
+  {path:'admin/dashboard/category_new',component:NewcategoryComponent},
+  {path:'wishlist',component:WishlistComponent},
 ];
 
 @NgModule({

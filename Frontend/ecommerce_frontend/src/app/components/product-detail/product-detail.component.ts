@@ -8,7 +8,7 @@ import { FormGroup,Validators,FormControl } from '@angular/forms'
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css']
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit{
 
   constructor(private service:EcommerceService,private activerouter:ActivatedRoute,private router:Router) { }
 
@@ -28,6 +28,17 @@ export class ProductDetailComponent implements OnInit {
   })
   }
 
+  addToWishlistFunction(id:any){
+    
+    let token=localStorage.getItem("token")
+    if(token){
+      this.service.addToWishlistService(id).then(res=>res.json()).then(data=>console.log(data))
+      setTimeout(window.location.href='wishlist',1000)
+    }
+    else{
+      this.router.navigateByUrl('signin')
+    }
+  }
   addToCartFunction(id:any){
     
     let token=localStorage.getItem("token")
@@ -38,7 +49,6 @@ export class ProductDetailComponent implements OnInit {
     else{
       this.router.navigateByUrl('signin')
     }
-    
   }
   placeorderFunction(id:any){
     let token=localStorage.getItem("token")

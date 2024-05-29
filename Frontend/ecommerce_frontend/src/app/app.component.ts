@@ -45,6 +45,14 @@ export class AppComponent {
         $(window).resize(toggleNavbarMethod);
     });
   }
+  wishlist(){
+    if(localStorage.getItem('token') && localStorage.getItem('jwt') ){
+      this.router.navigateByUrl('wishlist')
+    }
+    else{
+      this.router.navigateByUrl('signin')
+    }
+  }
   cart(){
     if(localStorage.getItem('token') && localStorage.getItem('jwt') ){
       this.router.navigateByUrl('cart')

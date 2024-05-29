@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'product',
     'cart',
     'Order',
-    "corsheaders"
+    "corsheaders",
+    'wishlist'
 ]
 
 MIDDLEWARE = [
@@ -86,7 +87,11 @@ WSGI_APPLICATION = 'ecommerceproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR /'db.sqlite3',
+        #'USER':'root',
+        #'PASSWORD':'reni1809',
+        #'HOST':'localhost',
+        #'PORT':'3304'
     }
 }
 
